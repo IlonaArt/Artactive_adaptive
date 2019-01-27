@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Open sans';
+    src: url('../static/fonts/Open_Sans/opensans-regular-webfont.woff') format('woff'),
+        url('../static/fonts/Open_Sans/opensans-regular-webfont.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Open sans';
+    src: url('../static/fonts/Open_Sans/opensans-extrabold-webfont.woff') format('woff'),
+        url('../static/fonts/Open_Sans/opensans-extrabold-webfont.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../static/fonts/Open_Sans/opensans-semibold-webfont.woff') format('woff'),
+        url('../static/fonts/Open_Sans/opensans-semibold-webfont.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../static/fonts/Muller/mullermedium-webfont.woff') format('woff'),
+        url('../static/fonts/Muller/mullermedium-webfont.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../static/fonts/Muller/mullerbold-webfont.woff') format('woff'),
+        url('../static/fonts/Muller/mullerbold-webfont.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../static/fonts/Muller/mullerextrabold-webfont.woff') format('woff'),
+    url('../static/fonts/Muller/mullerextrabold-webfont.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
