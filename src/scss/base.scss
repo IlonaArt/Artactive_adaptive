@@ -1,5 +1,4 @@
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
 
   width: 1px;
   height: 1px;
@@ -18,14 +17,13 @@ body {
   font-family: "Open Sans", "Muller", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff;
-  background-color: #7677;
 }
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
-
+  background-color: #8e3ddb;
 }
 
 * {

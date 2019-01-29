@@ -1,0 +1,13 @@
+.banner-section__banner-wrap {
+    position: relative;
+    width: 341px;
+    height: 324px;
+}
+
+.banner-section__banner-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-63%);
+}
