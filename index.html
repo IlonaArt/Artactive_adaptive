@@ -124,10 +124,10 @@
             <img class="service__img" src="./build/img/envelopes.png" width="304" height="255" alt="Конверты">
           </div>
         </div>
-        <div class="service__form-wrap application-form">
+        <div class="service__form-wrap application-form_white">
           <em class="application-form__text">Есть вопросы?</em>
           <strong class="application-form__request">Оставьте заявку на консультацию</strong>
-          <form class="application-form__application-form_white" action="#" name="application-form" method="post">
+          <form class="application-form_white__application-form" action="#" name="application-form" method="post">
             <label class="visually-hidden" for="user-name">Имя</label>
             <input id="user-name" name="name" type="text" placeholder="Имя">
             <label class="visually-hidden" for="user-phone">Телефон</label>
@@ -171,7 +171,7 @@
         </li>
         <li class="FAQ-section__item">
           <strong class="FAQ-section__question">У меня нет макета</strong>
-          <p class="FAQ-section__description description">В нашем штате работают професиональные дизайнеры, которые с ваших 
+          <p class="FAQ-section__description description">В нашем штате работают профессиональные дизайнеры, которые с ваших 
             слов или в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>  
         </li>
         <li class="FAQ-section__item">
@@ -186,12 +186,24 @@
         </li>
         <li class="FAQ-section__item">
           <strong class="FAQ-section__question">Вызов курьера бесплатный?</strong>
-          <p class="FAQ-section__description description">В зависимости от соимости заказа, курьер может доставить
-             вам продукцию бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. 
+          <p class="FAQ-section__description description">В зависимости от стоимости заказа, курьер может доставить
+             вам продукцию бесплатно (при стоимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. 
              в пределах Ярославской области.</p>  
         </li>
       </ul>
     </section>
+    <div class="application-form_purple service__form-wrap">
+      <em class="application-form__text">Есть вопросы?</em>
+      <strong class="application-form__request">Оставьте заявку на консультацию</strong>
+      <form class="application-form_purple__application-form" action="#" name="application-form" method="post">
+        <label class="visually-hidden" for="user-name">Имя</label>
+        <input id="user-name" name="name" type="text" placeholder="Имя">
+        <label class="visually-hidden" for="user-phone">Телефон</label>
+        <input id="user-phone" name="phone" type="tel" placeholder="Телефон">
+        <button class="application-form__button button" type="submit">Отправить</button>
+      </form>
+    </div>
+      
   </main>
   <script src="./build/js/index.js"></script>
 </body>
