@@ -191,19 +191,41 @@
              в пределах Ярославской области.</p>  
         </li>
       </ul>
+      <div class="application-form_purple FAQ-section__form-wrap">
+          <em class="application-form__text">Есть вопросы?</em>
+          <strong class="application-form__request">Оставьте заявку на консультацию</strong>
+          <form class="application-form_purple__application-form" action="#" name="application-form" method="post">
+            <label class="visually-hidden" for="user-name">Имя</label>
+            <input id="user-name" name="name" type="text" placeholder="Имя">
+            <label class="visually-hidden" for="user-phone">Телефон</label>
+            <input id="user-phone" name="phone" type="tel" placeholder="Телефон">
+            <button class="application-form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
     </section>
-    <div class="application-form_purple service__form-wrap">
-      <em class="application-form__text">Есть вопросы?</em>
-      <strong class="application-form__request">Оставьте заявку на консультацию</strong>
-      <form class="application-form_purple__application-form" action="#" name="application-form" method="post">
-        <label class="visually-hidden" for="user-name">Имя</label>
-        <input id="user-name" name="name" type="text" placeholder="Имя">
-        <label class="visually-hidden" for="user-phone">Телефон</label>
-        <input id="user-phone" name="phone" type="tel" placeholder="Телефон">
-        <button class="application-form__button button" type="submit">Отправить</button>
-      </form>
+    <div class="map">
+      <div class="map__map-wrap">
+        <img class="map__img" src="./build/img/map.jpg" width="334" height="532" alt="Карта">
+      </div>
+      <div class="map__contacts-wrap">
+        <h2 class="map__title title">5. Контакты</h2>
+        <ul class="map__contacts-list">
+          <li class="map__contacts-item">
+            <span class="map__address description">г. Ярославль, проспект Октября, 88</span>
+          </li>
+          <li class="map__contacts-item">
+            <span class="map__email description">art-aktiv.76@mail.ru</span>
+          </li>
+          <li class="map__contacts-item">
+            <span class="map__phone description">+7 (920) 148 81 31</span>
+          </li>
+        </ul>
+      </div>
     </div>
-      
+    <footer class="footer">
+      <a href="#" class="footer__link footer-text">Политика конфиденциальности</a>
+      <span class="footer__copyright footer-text">ООО «АртАктив», 2017</span>
+    </footer>
   </main>
   <script src="./build/js/index.js"></script>
 </body>
