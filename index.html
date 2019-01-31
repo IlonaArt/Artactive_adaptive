@@ -9,25 +9,27 @@
 <body>
   <header class="header container">
     <span class="header__logo">Artactive</span>
-    <div class="header__menu-wrap">
+    <button class="header__button" type="button" aria-label="Меню">
       <svg xmlns="http://www.w3.org/2000/svg" class="header__menu-icon" role="img" aria-label="menu-icon"
        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16"><defs>
         <path id="tnwea" d="M281 23h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2z"/>
       </defs><g><g transform="translate(-280 -23)"><use fill="#ffffff" xlink:href="#tnwea"/></g></g></svg>
-    </div>
+    </button>
   </header>
-  <main class="container">
-    <section class="banner-section">
+  <main class="main">
+    <section class="banner-section container">
       <h1 class="visually-hidden">Копицентр Artactive</h1>
       <div class="banner-section__banner-wrap">
-        <img class="banner-section__banner-img" src="/build/img/banner-img.png" width="341" height="324" alt="Полиграфия">
+        <!-- <img class="banner-section__banner-img" src="/build/img/banner-img.png" width="320" height="791" alt="Полиграфия"> -->
+        <div class="banner-section__text-wrap">
+          <strong class="banner-section__slogan">Размер не имеет значения!</strong>
+          <b class="banner-section__caption">Оперативная полиграфия и широкоформатная печать любого размера</b>
+          <button class="banner-section__button button" type="button">Заказать печать</button>
+          <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
+        </div>
       </div>
-      <strong class="banner-section__slogan">Размер не имеет значения!</strong>
-      <b class="banner-section__caption">Оперативная полиграфия и широкоформатная печать любого размера</b>
-      <button class="banner-section__button button" type="button">Заказать печать</button>
-      <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
     </section>
-    <section class="about-section">
+    <section class="about-section container">
       <div class="about-section__text-wrap">
         <h2 class="about-section__title title">1. О нас</h2>
         <b class="about-section__caption caption">Полный спектр услуг — от дизайна до печати</b>
@@ -61,7 +63,7 @@
         </ul>
       </div>
     </section>
-    <section class="services-section">
+    <section class="services-section container">
       <h2 class="services-section__title title">2. Услуги</h2>
       <div class="service">
         <div class="service__wrap">
@@ -137,7 +139,7 @@
         </div>  
       </div>
     </section>
-    <section class="comments-section">
+    <section class="comments-section container">
       <h2 class="visually-hidden">3. Отзывы</h2>
       <div class="comments__slider">
         <div class="comments__img-wrap">
@@ -156,7 +158,7 @@
         <button class="slider-button button-next" type="button" aria-label="Показать следующее изображение"></button>
       </div>
     </section>
-    <section class="FAQ-section">
+    <section class="FAQ-section container">
       <h2 class="FAQ-section__title title">4. Частые вопросы (FAQ)</h2>
       <ul class="FAQ-section__list">
         <li class="FAQ-section__item">
@@ -203,7 +205,7 @@
           </form>
         </div>
     </section>
-    <div class="map">
+    <div class="map container">
       <div class="map__map-wrap">
         <img class="map__img" src="./build/img/map.jpg" width="334" height="532" alt="Карта">
       </div>
