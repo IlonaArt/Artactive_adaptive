@@ -1,0 +1,34 @@
+.services-section {
+    padding-top: 68px;
+    background-color: $service-bg;
+}
+
+.services-section__title {
+    margin-bottom: 45px;
+}
+
+.service__caption {
+    position: relative;
+    margin-bottom: 49px;
+    z-index: 10;
+    &::before {
+        content: "1";
+        position: absolute;
+        font-family: "Muller", sans-serif;
+        font-size: 8.286em;
+        text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+        width: 95px;
+        height: 137px;
+        top: -65px;
+        left: 31px;
+        font-weight: 800;
+        z-index: -1;
+        color: $service-bg;
+    }
+}
+
+.service__list {
+    padding-left: 20px;
+    margin: 0;
+}
+
