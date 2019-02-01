@@ -1,0 +1,24 @@
+.button {
+    @extend %borderless-btn;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 24px;
+    background-color: $button-color;
+}
+
+.title {
+    font-family: "Muller", sans-serif;
+    font-size: 2.143em;
+    color: $title-color;
+}
+
+.caption {
+    font-family: "Muller",sans-serif;
+    font-size: 1.714em;
+    color: $caption-color;
+}
+
+.description {
+    line-height: 24px;
+}

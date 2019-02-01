@@ -1,0 +1,58 @@
+.about-section {
+    padding-top: 39px;
+    margin-bottom: 8px;
+}
+
+.about-section__title {
+    margin-bottom: 34px;
+}
+
+.about-section__caption {
+    display: block;
+    margin-bottom: 41px;
+}
+
+.about-section__text-wrap {
+    margin-bottom: 41px;
+}
+
+.about-section__description {
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+} 
+
+.about-section__list {
+    @include ul-style(); 
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section__item {
+    align-self: center;
+    width: 141px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(.item-tablet) {
+        margin-bottom: 46px;
+    }
+}
+
+.item-tablet {
+    align-self: flex-end;
+}
+
+.item-sheet {
+    align-self: flex-start;
+}
+
+.about-section__img {
+    margin-bottom: 13px;
+}
+
+.about-section__steps {
+    text-align: center;
+    line-height: 18px;
+}
+
