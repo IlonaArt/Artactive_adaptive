@@ -1,6 +1,6 @@
 .about-section {
     padding-top: 39px;
-    margin-bottom: 8px;
+    margin-bottom: 54px;
 }
 
 .about-section__title {
@@ -22,37 +22,9 @@
     }
 } 
 
-.about-section__list {
-    @include ul-style(); 
-    display: flex;
-    flex-direction: column;
-}
-
-.about-section__item {
-    align-self: center;
-    width: 141px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &:not(.item-tablet) {
-        margin-bottom: 46px;
-    }
-}
-
-.item-tablet {
-    align-self: flex-end;
-}
-
-.item-sheet {
-    align-self: flex-start;
-}
-
-.about-section__img {
-    margin-bottom: 13px;
-}
-
-.about-section__steps {
-    text-align: center;
-    line-height: 18px;
+.about-section__scheme {
+    width: 284px;
+    height: 683px;
+    margin: 0 auto;
 }
 

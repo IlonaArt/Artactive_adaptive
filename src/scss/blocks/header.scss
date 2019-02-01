@@ -7,7 +7,9 @@
 }
 
 .header__button {
-    @extend %borderless-btn; 
+    @extend %borderless-btn;
+    width: 25px;
+    height: 16px; 
 }
 
 .header__logo {
