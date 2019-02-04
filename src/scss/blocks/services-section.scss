@@ -1,6 +1,24 @@
 .service {
     &:not(:nth-of-type(2)) {
         background-color: $service-bg;
+        &::before {
+            color: $service-bg;
+        }
+    }
+    &:nth-of-type(1) {
+        padding-bottom: 73px;
+    }
+    &:nth-of-type(2) {
+        padding-bottom: 251px;
+        background-image: url("../img/interior.jpg");
+        background-repeat: no-repeat;
+        background-position: -44% 82%;
+    }
+    &:not(:nth-of-type(1)) {
+        padding-top: 73px;
+    }
+    &:nth-of-type(3) {
+        padding-bottom: 58px;
     }
 }
 
@@ -22,12 +40,23 @@
         text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
         width: 95px;
         height: 137px;
-        top: -65px;
+        top: 34px;
         left: 31px;
         font-weight: 800;
         z-index: -1;
-        color: $service-bg;
+        color: grey;
+        /*color: $service-bg;*/
+        &:nth-of-type(2) {
+            content: "2";
+            color: #ffffff;
+        }
     }
+   /* &:nth-of-type(2) {
+        &::before {
+            content: "2";
+            color: #ffffff;
+        }
+    }*/
 }
                                                     /* First section */
 .service__wrap {
@@ -114,4 +143,63 @@
 .consult-block__button {
     width: 242px;
     height: 48px;
+}
+                                                        /* second section */
+.service__print {
+    margin-bottom: 47px;
+}
+
+.service__button {
+    max-width: 289px;
+}
+                                                 /*third*/
+.service__description {
+    &:nth-of-type(1) {
+        margin-bottom: 32px;
+    }
+    &:nth-of-type(2) {
+        margin-bottom: 28px;
+    }
+}
+
+.service__img-wrap-envelopes {
+    width: 304px;
+    height: 255px;
+}
+
+.application-form_white {
+    flex-direction: column;
+    .application-form__text,
+    .application-form__request {
+        color: $caption-color;
+    }
+    .application-input {
+        border-bottom: 1px solid $input-underline;
+        background-color: $service-bg;
+        outline-color: $input-underline;
+        max-width: 289px;
+        &.name {
+            margin-bottom: 23px;
+        }
+        &.phone {
+            margin-bottom: 40px;
+        }
+    }
+    .application-form__button {
+        max-width: 289px;
+    }
+}
+
+.application-form_purple {
+    background-color: $container-bg;
+    justify-content: flex-start;
+    .application-form__text,
+    .application-form__request {
+        color: #ffffff;
+    }
+    .application-input {
+        @include placeholder(color: $);
+        background-color: $container-bg;
+        border-bottom: 1px solid #ffffff;
+    }
 }
