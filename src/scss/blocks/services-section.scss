@@ -1,24 +1,42 @@
 .service {
     &:not(:nth-of-type(2)) {
         background-color: $service-bg;
-        &::before {
-            color: $service-bg;
+        .service__caption {
+            &::before {
+                color: $service-bg;
+            }
         }
     }
     &:nth-of-type(1) {
         padding-bottom: 73px;
+        .service__caption {
+            &::before {
+                content: "1";
+            }
+        }
     }
     &:nth-of-type(2) {
         padding-bottom: 251px;
         background-image: url("../img/interior.jpg");
         background-repeat: no-repeat;
         background-position: -44% 82%;
+        .service__caption {
+            &::before {
+                content: "2";
+                color: #ffffff;
+            }
+        }
     }
     &:not(:nth-of-type(1)) {
         padding-top: 73px;
     }
     &:nth-of-type(3) {
         padding-bottom: 58px;
+        .service__caption {
+            &::before {
+                content: "3";
+            }
+        }
     }
 }
 
@@ -46,19 +64,10 @@
         z-index: -1;
         color: grey;
         /*color: $service-bg;*/
-        &:nth-of-type(2) {
-            content: "2";
-            color: #ffffff;
-        }
     }
-   /* &:nth-of-type(2) {
-        &::before {
-            content: "2";
-            color: #ffffff;
-        }
-    }*/
 }
-                                                    /* First section */
+
+ /* First section */
 .service__wrap {
     margin-bottom: 38px;
 }
@@ -67,7 +76,8 @@
     padding-left: 20px;
     margin: 0;
 }
-                                                /* slider */
+
+/* slider */
 .service__slider {
     width: 292px;
     margin-bottom: 43px;
@@ -113,7 +123,8 @@
         background-image: url("../img/btn-next.svg");
     }
 }
-                                                        /* consultation */
+
+/* consultation */
 .service__consult-block {
     display: flex;
     flex-direction: column;
@@ -144,7 +155,8 @@
     width: 242px;
     height: 48px;
 }
-                                                        /* second section */
+
+/* second section */
 .service__print {
     margin-bottom: 47px;
 }
@@ -152,7 +164,8 @@
 .service__button {
     max-width: 289px;
 }
-                                                 /*third*/
+
+/* third section */
 .service__description {
     &:nth-of-type(1) {
         margin-bottom: 32px;
@@ -198,7 +211,7 @@
         color: #ffffff;
     }
     .application-input {
-        @include placeholder(color: $);
+        @include placeholder($color: $input-underline);
         background-color: $container-bg;
         border-bottom: 1px solid #ffffff;
     }
