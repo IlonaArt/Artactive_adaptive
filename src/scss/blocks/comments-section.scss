@@ -1,0 +1,53 @@
+.comments-section {
+    margin-bottom: 62px;
+    &.container {
+        padding-top: 34px;
+    }
+}
+
+.comments__slider {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
+}
+
+.comments__img-wrap {
+    height: 245px;
+    padding-top: 61px;
+}
+
+.comments__slider {
+    padding: 0 25px 0 18px;
+    margin-bottom: 46px;
+}
+
+.comments__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.comments__description {
+    margin-bottom: 45px;
+}
+
+.comments__author {
+    display: block;
+    font-size: 1.120em;
+    color: $caption-color;
+    line-height: 30.1px;
+}
+
+.comments__link {
+    text-decoration: none;
+    color: $link-color;
+    &:link {
+        color: $link-color;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    &:focus,
+    &:visited {
+        color: #551A8B;
+        text-decoration: underline;
+    }
+}
