@@ -1,0 +1,46 @@
+.FAQ-section__title {
+    line-height: 38px;
+    margin-bottom: 42px;
+}
+
+.FAQ-section__list {
+    @include ul-style();
+}
+
+.FAQ-section__question {
+    font-size: 1.429em;
+    font-weight: 600;
+    line-height: 30.1px;
+    color: $caption-color;
+    margin-bottom: 30px;
+}
+
+.FAQ-section__description {
+    margin-bottom: 37px;
+}
+
+.FAQ-section__form-wrap {
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    border-radius: 10px;
+    padding: 45px 21px 56px 24px;
+    background-color: $application-form;
+    .application-form__text,
+    .application-form__request {
+        color: #ffffff;
+    }
+}
+
+.application-form_purple {
+    .application-input {
+        @include placeholder;
+        background-color: $application-form;
+        color: $placeholder-color;
+        border-bottom: 1px solid $input-underline;
+        &.phone {
+            margin-bottom: 40px;
+        }
+    }
+    .application-form__button {
+        max-width: 245px;
+    }
+}

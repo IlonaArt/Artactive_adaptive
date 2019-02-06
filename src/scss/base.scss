@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+strong {
+  display: block;
+}
+
 %borderless-btn {
   font-size: 1.143em;
   font-weight: 700;

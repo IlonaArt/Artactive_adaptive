@@ -63,7 +63,6 @@
         font-weight: 800;
         z-index: -1;
         color: grey;
-        /*color: $service-bg;*/
     }
 }
 
@@ -132,12 +131,11 @@
     margin: 0 3px;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
     border-radius: 10px;
-    background-color: $container-bg; 
+    background-color: $application-form; 
     color: #ffffff;
 }
 
-.consult-block__text,
-.consult-block__request {
+.consult-block__text {
     display: block;
 }
 
@@ -181,16 +179,15 @@
 }
 
 .application-form_white {
-    flex-direction: column;
     .application-form__text,
     .application-form__request {
         color: $caption-color;
     }
     .application-input {
+        @include placeholder ($color: $input-color);
         border-bottom: 1px solid $input-underline;
         background-color: $service-bg;
         outline-color: $input-underline;
-        max-width: 289px;
         &.name {
             margin-bottom: 23px;
         }
@@ -203,16 +200,3 @@
     }
 }
 
-.application-form_purple {
-    background-color: $container-bg;
-    justify-content: flex-start;
-    .application-form__text,
-    .application-form__request {
-        color: #ffffff;
-    }
-    .application-input {
-        @include placeholder($color: $input-underline);
-        background-color: $container-bg;
-        border-bottom: 1px solid #ffffff;
-    }
-}

@@ -28,6 +28,7 @@
 .application-form {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     .visually-hidden {
         position: absolute;
     }
@@ -51,10 +52,10 @@
 }
 
 .application-input {
-    @include placeholder($color: #ffffff);
     border: none;
     padding: 12px 14px;
     width: 100%;
+    max-width: 289px;
 }
 
 
