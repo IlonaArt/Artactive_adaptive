@@ -10,6 +10,8 @@
     @extend %borderless-btn;
     width: 25px;
     height: 16px; 
+    display: block;
+    padding: 0;
 }
 
 .header__logo {

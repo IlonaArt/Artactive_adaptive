@@ -1,13 +1,34 @@
 .banner-section {
     background-image: url("../img/banner-img.png");
     background-repeat: no-repeat;
+    background-position-x: 50%;
     padding-bottom: 64px;
     color: #ffffff;
+    @media(min-width: 456px) {
+        background-image: url("../img/banner_750.png");
+        background-position-x: 50%;
+    }
+    @media(min-width: 750px) {
+        display: flex;
+        justify-content: flex-end;
+        background-position-x: 0;
+    }
     &.container {
         background-color: $container-bg;
     }
     .visually-hidden {
         margin-bottom: 338px;
+    }
+}
+
+.banner-section__banner-wrap {
+    display: flex;
+    justify-content: center;
+    @media(min-width: 456px) {
+        padding-top: 158px;
+    }
+    @media(min-width: 750px) {
+        padding-top: 37px;
     }
 }
 
@@ -24,19 +45,31 @@
     line-height: 45px;
     text-transform: uppercase;
     margin-bottom: 35px;
+   @media (min-width: 750px) {
+    max-width: 252px;
+    font-size: 3.214em;
+   }
 }
 
 .banner-section__caption {
     font-size: 1.500em;
     font-weight: 400;
-    max-width: 280px;
+    max-width: 288px;
     margin-bottom: 45px;
+    @media(min-width: 750px) {
+        max-width: 274px;
+    }
 }
 
 .banner-section__button {
+    max-width: 289px;
     margin-bottom: 29px;
+    @media(min-width: 750px) {
+        max-width: 247px;
+    }
 }
 
 .banner-section__delivery {
     font-size: 1.143em;
+    max-width: 208px;
 }
