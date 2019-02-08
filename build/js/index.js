@@ -1,0 +1,1 @@
+var e=document.querySelector("#slider .button-wrap .button-prev"),t=document.querySelector("#slider .button-wrap .button-next"),c=document.querySelectorAll("#slider .service__img-wrap img"),l=0;e.onclick=function(){c[l].className="",--l<0&&(l=c.length-1),c[l].className="showed"},t.onclick=function(){c[l].className="",++l>=c.length&&(l=0),c[l].className="showed"};
