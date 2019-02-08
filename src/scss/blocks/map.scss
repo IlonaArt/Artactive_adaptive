@@ -66,6 +66,7 @@
 
 .map__ref {
     color: $base-text;
+    outline-color: $button-color;
     &:active,
     &:focus {
         color: #551a8b;

@@ -108,21 +108,6 @@
     margin: 0 auto;
 }
 
-.slider-button {
-    @extend %borderless-btn;
-    width: 91px; 
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-repeat: no-repeat;
-    &.button-prev {
-        background-image: url("../img/btn-prev.svg");
-        margin-right: 43px;    
-    }
-    &.button-next {
-        background-image: url("../img/btn-next.svg");
-    }
-}
-
 /* consultation */
 .service__consult-block {
     display: flex;
