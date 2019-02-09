@@ -36,7 +36,7 @@
         </svg>
       </button>
     </section>
-    <section class="about-section container">
+    <section class="about-section container purple-lines">
       <div class="about-section__text-wrap">
         <h2 class="about-section__title title">1. О нас</h2>
         <b class="about-section__caption caption">Полный спектр услуг — от дизайна до печати</b>
@@ -51,7 +51,7 @@
       </div>  
       <div class="about-section__scheme">
         <picture>
-          <source media="(max-width: 705px)" srcset="./build/img/scheme_320.jpg">
+          <source media="(max-width: 719px)" srcset="./build/img/scheme_320.jpg">
           <source media="(max-width: 1169px)" srcset="./build/img/scheme_750.jpg">
           <img class="about-section__scheme-img" src="./build/img/scheme_1170.jpg" width="534" height="482" alt="Схема">
        </picture>
@@ -85,14 +85,28 @@
         </div>
         <div id="slider" class="service__slider">
           <div class="service__img-wrap">
-            <img class="service__slide showed" src="./build/img/slide-1.jpg" width="292" height="188" alt="Баннер Miller">
-            <img class="service__slide" src="./build/img/slide-2.jpg" width="292" height="188" alt="Баннер воды">
-            <img class="service__slide" src="./build/img/slide-1.jpg" width="292" height="188" alt="Баннер Miller">
+            <picture>
+              <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+              <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+              <img class="service__slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+            </picture>
+            <picture>
+                <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+                <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+                <img class="service__slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+              </picture>
+            <picture>
+              <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+              <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+              <img class="service__slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+            </picture>
           </div>
-          <span class="service__slide-description">Растяжка на ул. Ленина</span>
-          <div class="button-wrap">
-            <button class="slider-button button-prev" type="button" aria-label="Показать предыдущее изображение"></button>
-            <button class="slider-button button-next" type="button" aria-label="Показать следующее изображение"></button>
+          <div class="service__slide-nav-wrap">
+            <span class="service__slide-description">Растяжка на ул. Ленина</span>
+            <div class="button-wrap">
+              <button class="slider-button button-prev" type="button" aria-label="Показать предыдущее изображение"></button>
+              <button class="slider-button button-next" type="button" aria-label="Показать следующее изображение"></button>
+            </div>
           </div>
         </div>
         <div class="service__consult-block consult-block">

@@ -1,8 +1,18 @@
 .about-section {
     padding-top: 39px;
     margin-bottom: 54px;
+    position: relative;
+    &.purple-lines {
+        &::before,
+        &::after {
+            @media(max-width: 749px) {
+                display: none;
+            }
+        }
+    }
     @media(min-width: 750px) {
         padding-top: 52px;
+        margin-bottom: 141px;
     }
 }
 
@@ -40,11 +50,11 @@
 }
 
 .about-section__scheme-img {
-    @media(max-width: 704px) {
+    @media(max-width: 719px) {
         width: 284px;
         height: 683px;
     }
-    @media(min-width: 705px) and (max-width: 1169px) {
+    @media(min-width: 720px) and (max-width: 1169px) {
         width: 714px;
         height: 451px;
     }

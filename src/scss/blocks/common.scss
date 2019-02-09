@@ -1,3 +1,26 @@
+.purple-lines {
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -153px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 83px;
+        background-color: $application-form;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -203px;
+        left: 51%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 83px;
+        background-color: $application-form;
+    }
+}
+
 .button {
     @extend %borderless-btn;
     display: block;
@@ -42,6 +65,7 @@
     color: $caption-color;
     @media(min-width: 750px) {
         font-size: 2.230em;
+        line-height: 36px;
     }
 }
 
