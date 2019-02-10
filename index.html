@@ -109,11 +109,15 @@
             </div>
           </div>
         </div>
-        <div class="service__consult-block consult-block">
-          <em class="consult-block__text">Есть вопросы?</em>
-          <strong class="consult-block__request">Закажите консультацию</strong>
-          <button class="consult-block__button button" type="button">Заказать</button>
-        </div>
+        <div class="consult-block__wrap">
+          <div class="service__consult-block consult-block">
+            <div class="consult-block__text-wrap">
+              <em class="consult-block__text">Есть вопросы?</em>
+              <strong class="consult-block__request">Закажите консультацию</strong>
+            </div>  
+            <button class="consult-block__button button" type="button">Заказать</button>
+          </div>
+        </div>  
       </div>    
       <div class="service container">
         <b class="service__caption caption">Широкоформатная печать для вашего интерьера</b>
@@ -123,30 +127,30 @@
             композиции, фотоколлаж, ретушь, различные эффекты</p>
         <button class="service__button button" type="button">Оставить заявку</button>
       </div>
-      <div class="service container">
-        <div class="service__wrap">
-          <b class="service__caption caption">Оперативная полиграфия — от визитки до баннера</b>
-          <p class="service__description description">Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <p class="service__description description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
+      <div class="service container purple-lines">
+        <b class="service__caption caption">Оперативная полиграфия — от визитки до баннера</b>
+        <p class="service__description description">Lorem ipsum dolor sit amet, consectetur 
+          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="service__description description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
+        <div class="application-wrap"> 
           <div class="service__img-wrap-envelopes">
-            <img class="service__img" src="./build/img/envelopes.png" width="304" height="255" alt="Конверты">
+            <!-- <img class="service__img" src="./build/img/envelopes.png" width="304" height="255" alt="Конверты"> -->
           </div>
-        </div>
-        <div class="service__form-wrap application-form_white">
-          <em class="application-form__text">Есть вопросы?</em>
-          <strong class="application-form__request">Оставьте заявку на консультацию</strong>
-          <form class="application-form application-form_white" action="#" name="application-form" method="post">
-            <label class="visually-hidden" for="user-name">Имя</label>
-            <input class="application-input name" id="user-name" name="name" type="text" placeholder="Имя">
-            <label class="visually-hidden" for="user-phone">Телефон</label>
-            <input class="application-input phone" id="user-phone" name="phone" type="tel" placeholder="Телефон">
-            <button class="application-form__button button" type="submit">Отправить</button>
-          </form>
-        </div>  
+          <div class="service__form-wrap">
+            <em class="application-form__text">Есть вопросы?</em>
+            <strong class="application-form__request">Оставьте заявку на консультацию</strong>
+            <form class="application-form application-form_white" action="#" name="application-form" method="post">
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input class="application-input name" id="user-name" name="name" type="text" placeholder="Имя">
+              <label class="visually-hidden" for="user-phone">Телефон</label>
+              <input class="application-input phone" id="user-phone" name="phone" type="tel" placeholder="Телефон">
+              <button class="application-form__button button" type="submit">Отправить</button>
+            </form>
+          </div>  
+        </div>       
       </div>
     </section>
     <section class="comments-section container">

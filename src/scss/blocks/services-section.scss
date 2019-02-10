@@ -1,27 +1,45 @@
 .service {
-    &:not(:nth-of-type(2)) {
-        background-color: $service-bg;
-        .service__caption {
-            &::before {
-                color: $service-bg;
-            }
-        }
-    }
     &:nth-of-type(1) {
         display: flex;
         flex-direction: column;
         padding-bottom: 73px;
+        @media(min-width: 750px) {
+            padding-bottom: 23px;
+        }
         .service__caption {
             &::before {
                 content: "1";
             }
         }
     }
+    &:not(:nth-of-type(1)) {
+        padding-top: 73px;
+        @media(min-width: 750px) {
+            padding-top: 112px;
+        }
+    }
     &:nth-of-type(2) {
+        position: relative;
         padding-bottom: 251px;
-        background-image: url("../img/interior.jpg");
-        background-repeat: no-repeat;
-        background-position: -44% 82%;
+        @media(min-width: 750px) {
+            padding-bottom: 396px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 282px;
+            height: 355px;
+            bottom: 8%;
+            right: 0;
+            background-image: url("../img/interior.jpg");
+            background-repeat: no-repeat;   
+            @media(min-width: 750px) {
+                background-image: url("../img/interior_750.jpg");
+                width: 546px;
+                height: 640px;
+                top: 19%;
+            }      
+        }
         .service__caption {
             &::before {
                 content: "2";
@@ -29,14 +47,38 @@
             }
         }
     }
-    &:not(:nth-of-type(1)) {
-        padding-top: 73px;
-    }
-    &:nth-of-type(3) {
-        padding-bottom: 58px;
+    &:not(:nth-of-type(2)) {
+        background-color: $service-bg;
         .service__caption {
             &::before {
+                color: $service-bg;
+            }
+        }
+    }  
+    &:nth-of-type(3) {
+        position: relative;
+        padding-bottom: 58px;
+        @media(min-width: 750px) {
+            padding-bottom: 73px;
+        }
+        .service__caption {
+            margin-bottom: 56px;
+            &::before {
                 content: "3";
+            }
+        }
+        &.purple-lines {
+            &::before,
+            &::after {
+                @media(max-width: 749px) {
+                    display: none;
+                }
+            }
+            &::before {
+                top: -63px;
+            }
+            &::after {
+                top: -16px;
             }
         }
     }
@@ -58,7 +100,7 @@
     z-index: 10;
     @media(min-width: 664px) {
         font-size: 2.286em;
-        max-width: 470px;
+        max-width: 445px;
         margin-bottom: 66px;
     }
     &::before {
@@ -67,15 +109,13 @@
         font-family: "Muller", sans-serif;
         font-size: 200px;
         text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
-        width: 95px;
-        height: 137px;
-        top: 34px;
+        top: 16px;
         left: 31px;
         font-weight: 800;
         z-index: -1;
         color: grey;
         @media(min-width: 664px) {
-            top: 7px;
+            top: 12px;
         }
     }
 }
@@ -186,29 +226,42 @@
 }
 
 /* consultation */
+.consult-block__wrap {
+    @media(min-width: 750px) {
+        min-width: 690px;
+        margin: 0 auto;
+    }
+}
 .service__consult-block {
     display: flex;
     flex-direction: column;
     padding: 34px 24px 30px;
-    margin: 0 3px;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
     border-radius: 10px;
     background-color: $application-form; 
     color: #ffffff;
+    @media(min-width: 540px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     @media(min-width: 750px) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 34px 32px;
-       /* max-width: 690px;
-        margin: 0 auto;*/
     }
+}
+
+.consult-block__text-wrap {
+    display: flex;
+    flex-direction: column;
 }
 
 .consult-block__text {
     display: block;
     margin-bottom: 7px;
-    @media(min-width: 750px) {
+    @media(min-width: 540px) {
         margin-bottom: 0;
     }
 }
@@ -217,7 +270,7 @@
     font-size: 1.143em;
     font-weight: 600;
     margin-bottom: 32px;
-    @media(min-width: 750px) {
+    @media(min-width: 540px) {
         margin-bottom: 0;
     }
 }
@@ -232,10 +285,18 @@
     position: relative;
     margin-bottom: 47px;
     z-index: 10;
+    @media(min-width: 750px) {
+        max-width: 547px;
+    }
 }
 
 .service__button {
+    position: relative;
+    z-index: 10;
     max-width: 289px;
+    @media(min-width: 750px) {
+        max-width: 241px;
+    }
 }
 
 /* third section */
@@ -252,9 +313,70 @@
     }
 }
 
+.application-wrap {
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 400px) {
+        align-items: center;
+    }
+    @media(min-width: 600px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    @media(min-width: 750px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
 .service__img-wrap-envelopes {
+    position: relative;
     width: 304px;
     height: 255px;
+    margin-bottom: 43px;
+    @media(min-width: 600px) {
+        margin-bottom: 0;
+    }
+    @media(min-width: 750px) {
+        width: 365px;
+        height: 381px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 304px;
+        height: 255px;
+        background-image: url("../img/envelopes.png");
+        background-repeat: no-repeat;
+        @media(min-width: 600px) {
+            left: 8%;
+        }
+        @media(min-width: 750px) {
+            background-image: url("../img/envelopes_750.png");
+            width: 365px;
+            height: 381px;
+        }
+    }
+}
+
+.service__form-wrap {
+    position: relative;
+    @media(min-width: 400px) {
+        width: 241px;
+    }
+    @media(min-width: 750px) {
+        &::after {
+            position: absolute;
+            content: "";
+            left: -61%;
+            bottom: 0;
+            width: 502px;
+            height: 287px;
+            background-image: url("../img/paper-plane.png");
+        }
+    }
+
 }
 
 .application-form_white {
@@ -272,10 +394,19 @@
         }
         &.phone {
             margin-bottom: 40px;
+            @media(min-width: 750px) {
+                margin-bottom: 34px;
+            }
+        }
+        @media(min-width: 750px) {
+            max-width: 240px;
         }
     }
     .application-form__button {
         max-width: 289px;
+        @media(min-width: 750px) {
+            max-width: 240px;
+        }
     }
 }
 
