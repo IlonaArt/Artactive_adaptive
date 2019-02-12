@@ -35,6 +35,19 @@
     }
 }
 
+.button-wrap {
+    display: flex;
+    width: 224px;
+    height: 14px;
+    margin: 0 auto;
+    @media(min-width: 750px) {
+        margin: 0;
+    }
+    @media(min-width: 1170px) {
+        margin-right: 59px;
+    }
+}
+
 .slider-button {
     @extend %borderless-btn;
     width: 91px; 
@@ -94,6 +107,9 @@
     font-size: 1.429em;
     font-weight: 600;
     margin-bottom: 18px;
+    @media(min-width: 1169px) {
+        max-width: 100%;
+    }
 }
 
 .application-input {

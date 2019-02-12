@@ -9,42 +9,125 @@
 
 .FAQ-section__list {
     @include ul-style();
+    @media(min-width: 750px) {
+        margin-bottom: 56px;
+    }
+}
+
+.FAQ-section__item {
+    margin-bottom: 35px;
 }
 
 .FAQ-section__question {
     font-size: 1.429em;
     font-weight: 600;
-    line-height: 30.1px;
     color: $caption-color;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
 
-.FAQ-section__description {
-    margin-bottom: 37px;
-}
+/*.FAQ-section__question-decorative {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    display: block;
+    font-family: "Muller", sans-serif;
+    font-size: 3.214em;
+    color: $placeholder-color;
+    line-height: 30px;
+    @media(min-width: 750px) {
+        font-size: 4.857em;
+        right: 11%;
+        top: 15%;
+    }
+}*/
 
 .FAQ-section__form-wrap {
+    position: relative;
+    max-width: 289px;
+    margin: 0 auto;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
     border-radius: 10px;
-    padding: 45px 21px 56px 24px;
+    padding: 40px 21px 56px 24px;
     background-color: $application-form;
+    @media(min-width: 750px) {
+        max-width: 100%;
+        margin: 0;
+        padding: 40px 31px 20px;
+        background-image: url("../img/appl_bg.png");
+        background-repeat: no-repeat;
+        background-position: 100% 100%; 
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: -12%;
+        right: -22%;
+        width: 158px;
+        height: 147px;
+        background-image: url("../img/qstn.png");
+        @media(min-width: 750px) {
+            background-image: url("../img/qstn_750.png");
+            width: 241px;
+            height: 219px;
+            top: -28%;
+            right: -4%;
+        }
+    }
+    /*&::after {
+        position: absolute;
+        content: "?";
+        top: 0;
+        right: 0;
+        font-family: "Muller", sans-serif;
+        font-size: 3.214em;
+        color: $placeholder-color;
+        line-height: 30px;
+        @media(min-width: 750px) {
+            font-size: 4.857em;
+            right: 11%;
+            top: 15%;
+        }
+    }*/
     .application-form__text,
     .application-form__request {
-        color: #ffffff;
+        color: $placeholder-color;
+    }
+    .application-form__request {
+        @media(min-width: 750px) {
+            max-width: 100%;
+        }
     }
 }
 
 .application-form_purple {
+    @media(min-width: 750px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .application-input {
         @include placeholder;
         background-color: $application-form;
         color: $placeholder-color;
         border-bottom: 1px solid $input-underline;
+        &.name {
+            @media(min-width: 750px) {
+                max-width: 29%;
+            }
+        }
         &.phone {
             margin-bottom: 40px;
+            @media(min-width: 750px) {
+                max-width: 26%;
+            }
         }
+        
     }
     .application-form__button {
         max-width: 245px;
+        z-index: 10;
+        @media(min-width: 750px) {
+            max-width: 192px;
+        }
     }
 }
