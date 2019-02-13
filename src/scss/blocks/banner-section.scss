@@ -15,6 +15,13 @@
         background-position-x: 0;
         padding-bottom: 94px;
     }
+    @media(min-width: 1170px) {
+        background-image: url("../img/banner_1170.png"),
+      /*  linear-gradient(-225deg, #a044ff 0%, #6a3093 100%),*/
+      url("../img/banner-bg.png"),
+       linear-gradient(-45deg, rgb(160,68,255) 0%, rgb(106,48,147) 100%); 
+       background-size: contain, cover, cover;
+    }
     &.container {
         background-color: $container-bg;
     }

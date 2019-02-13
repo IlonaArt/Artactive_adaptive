@@ -4,6 +4,9 @@
     align-items: center;
     padding-top: 24px;
     background-color: $container-bg;
+    @media(min-width: 1170px) {
+        background-image:  linear-gradient(-45deg, rgb(160,68,255) 0%, rgb(106,48,147) 100%);
+    }
 }
 
 .header__button {
