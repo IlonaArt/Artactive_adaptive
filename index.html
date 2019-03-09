@@ -9,14 +9,49 @@
 <body>
   <header class="header container">
     <span class="header__logo">Artactive</span>
-    <button class="header__button" type="button" aria-label="Меню">
+    <nav class="header__main-nav" aria-label="Навигация по сайту">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <span class="header__nav-text">о нас</span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <span class="header__nav-text">услуги</span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <span class="header__nav-text">отзывы</span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <span class="header__nav-text">faq</span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <span class="header__nav-text">контакты</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header__phone-block">
+        <a href="#" class="header__phone-link">
+          <span class="header__phone">+7 (920) 148 81 31</span>
+        </a>
+        <button class="phone-button" type="button" aria-label="Заказать звонок">заказать звонок</button>
+      </div>
+    </nav>
+    <button class="header__button" type="button" aria-label="Кнопка меню">
       <svg xmlns="http://www.w3.org/2000/svg" class="header__menu-icon" role="img" aria-label="menu-icon"
        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16"><defs>
         <path id="tnwea" d="M281 23h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2z"/>
       </defs><g><g transform="translate(-280 -23)"><use fill="#ffffff" xlink:href="#tnwea"/></g></g></svg>
     </button>
   </header>
-  <main class="main">
+  <main class="main" role="main">
     <section class="banner-section container">
       <h1 class="visually-hidden">Копицентр Artactive</h1>
       <div class="banner-section__banner-wrap">

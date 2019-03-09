@@ -4,7 +4,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
  
@@ -37,18 +36,8 @@ function scripts() {
 
 function images() {
   return gulp.src('./src/img/**/*')
-  .pipe(imagemin([
-    imagemin.gifsicle({interlaced: true}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.optipng({optimizationLevel: 5}),
-    imagemin.svgo({
-        plugins: [
-            {removeViewBox: true},
-            {cleanupIDs: false}
-        ]
-    })
-  ]))
   .pipe(gulp.dest('./build/img/'))
+  .pipe(browserSync.stream())
 }
 
 function watch() {

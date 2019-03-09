@@ -5,8 +5,67 @@
     padding-top: 24px;
     background-color: $container-bg;
     @media(min-width: 1170px) {
+        justify-content: unset;
+        padding-top: 61px;
         background-image:  linear-gradient(-45deg, rgb(160,68,255) 0%, rgb(106,48,147) 100%);
     }
+}
+
+.header__main-nav {
+    display: flex;
+    @media(min-width: 320px) and (max-width: 1169px) {
+        display: none;
+    }
+}
+
+.header__nav-list {
+    display: flex;
+    @include ul-style();
+    margin-right: 65px;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 54px;
+}
+
+.header__nav-link {
+    display: block;
+    font-size: 0.929em;
+    color: $placeholder-color;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+}
+
+.header__nav-text {
+    cursor: pointer;
+}
+
+.header__phone-block {
+    display: flex;
+}
+
+.phone-button {
+    @extend %borderless-btn;
+    font-size: 0.786em;
+    border: 2px solid #ffffff;
+    border-radius: 17px;
+    padding: 9px 22px;
+    &:hover {
+        background-color: $button-color; 
+    }   
+}
+
+.header__phone-link {
+    text-decoration: none;
+}
+
+.header__phone {
+    font-size: 1.143em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $placeholder-color;
+    letter-spacing: 0.8px;
+    margin-right: 33px;
 }
 
 .header__button {
@@ -15,6 +74,9 @@
     height: 16px; 
     display: block;
     padding: 0;
+    @media(min-width: 1170px) {
+        display: none;
+    }
 }
 
 .header__logo {
@@ -24,6 +86,9 @@
     text-transform: uppercase;
     letter-spacing: 0.9px;
     color: #ffffff;
+    @media(min-width: 1170px) {
+        margin-right: 135px;
+    }
 }
 
 .header__menu-wrap {
