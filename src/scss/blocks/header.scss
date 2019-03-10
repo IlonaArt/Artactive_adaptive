@@ -1,9 +1,16 @@
 .header {
     padding-top: 24px;
     background-color: $container-bg;
+    @media(min-width: 320px) {
+        padding-bottom: 10px;
+    }
+    @media(min-width: 750px) {
+       padding-bottom: 18px;
+    }
     @media(min-width: 1170px) {
         line-height: 32px;
         padding-top: 61px;
+        padding-bottom: 60px;
     }
     .container {
         display: flex;
@@ -25,7 +32,14 @@
 .header__nav-list {
     display: flex;
     @include ul-style();
-    margin-right: 65px;
+    margin-right: 75px;
+}
+
+.header__nav-item {
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $placeholder-color;
+    }
 }
 
 .header__nav-item:not(:last-child) {
@@ -35,12 +49,10 @@
 .header__nav-link {
     display: block;
     font-size: 0.929em;
+    height: 100%;
     color: $placeholder-color;
     text-transform: uppercase;
     letter-spacing: 0.65px;
-}
-
-.header__nav-text {
     cursor: pointer;
 }
 
@@ -61,10 +73,16 @@
 
 .header__phone-link {
     text-decoration: none;
-    margin-right: 43px;
+    margin-right: 33px;
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $placeholder-color;
+    }
 }
 
-.header__phone {
+.header__phone {   
+    display: block;
+    height: 100%;
     font-size: 1.143em;
     font-weight: 700;
     text-transform: uppercase;

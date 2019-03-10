@@ -55,14 +55,22 @@
   </header>
   <main class="main" role="main">
     <section class="banner-section">
+      <h1 class="visually-hidden">Копицентр Artactive</h1>
       <div class="container">
-        <h1 class="visually-hidden">Копицентр Artactive</h1>
+        <picture class="banner-section__img-wrap">
+          <source media="(max-width: 455px)" srcset="./build/img/banner-img.png">
+          <source media="(max-width: 1169px)" srcset="./build/img/banner_750.png">
+          <source media="(max-width: 3600px)" srcset="./build/img/banner_1170.png">   
+          <img class="banner-section__img" src="/build/img/banner-img.png" width="319" height="324" alt="Заглавная картинка сайта">
+        </picture>
         <div class="banner-section__banner-wrap">
           <div class="banner-section__text-wrap">
             <strong class="banner-section__slogan">Размер не имеет значения!</strong>
             <b class="banner-section__caption">Оперативная полиграфия и широкоформатная печать любого размера</b>
-            <button class="banner-section__button button" type="button">Заказать печать</button>
-            <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
+            <div class="banner-section__delivery-wrap">
+              <button class="banner-section__button button" type="button">Заказать печать</button>
+              <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
+            </div>
           </div>
         </div>
         <button class="banner-section__button-down" type="button" aria-label="Вниз">
@@ -76,8 +84,8 @@
       </div>
     </section>
     <section class="about-section container purple-lines">
+      <h2 class="about-section__title title">1. О нас</h2>
       <div class="about-section__text-wrap">
-        <h2 class="about-section__title title">1. О нас</h2>
         <b class="about-section__caption caption">Полный спектр услуг — от дизайна до печати</b>
         <p class="about-section__description description">К вашим услугам мы предлагаем полный спектр работ, 
           начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей,
