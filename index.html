@@ -7,69 +7,73 @@
   <link rel="stylesheet" href="./build/css/main.css">
 </head>
 <body>
-  <header class="header container">
-    <span class="header__logo">Artactive</span>
-    <nav class="header__main-nav" aria-label="Навигация по сайту">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-text">о нас</span>
+  <header class="header">
+    <div class="container"> 
+      <span class="header__logo">Artactive</span>
+      <nav class="header__main-nav" aria-label="Навигация по сайту">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-text">о нас</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-text">услуги</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-text">отзывы</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-text">faq</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-text">контакты</span>
+            </a>
+          </li>
+        </ul>
+        <div class="header__phone-block">
+          <a href="#" class="header__phone-link">
+            <span class="header__phone">+7 (920) 148 81 31</span>
           </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-text">услуги</span>
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-text">отзывы</span>
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-text">faq</span>
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-text">контакты</span>
-          </a>
-        </li>
-      </ul>
-      <div class="header__phone-block">
-        <a href="#" class="header__phone-link">
-          <span class="header__phone">+7 (920) 148 81 31</span>
-        </a>
-        <button class="phone-button" type="button" aria-label="Заказать звонок">заказать звонок</button>
-      </div>
-    </nav>
-    <button class="header__button" type="button" aria-label="Кнопка меню">
-      <svg xmlns="http://www.w3.org/2000/svg" class="header__menu-icon" role="img" aria-label="menu-icon"
-       xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16"><defs>
-        <path id="tnwea" d="M281 23h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2z"/>
-      </defs><g><g transform="translate(-280 -23)"><use fill="#ffffff" xlink:href="#tnwea"/></g></g></svg>
-    </button>
+          <button class="phone-button" type="button" aria-label="Заказать звонок">заказать звонок</button>
+        </div>
+      </nav>
+      <button class="header__button" type="button" aria-label="Кнопка меню">
+        <svg xmlns="http://www.w3.org/2000/svg" class="header__menu-icon" role="img" aria-label="menu-icon"
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16"><defs>
+          <path id="tnwea" d="M281 23h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2zm0 7h23a1 1 0 0 1 0 2h-23a1 1 0 0 1 0-2z"/>
+        </defs><g><g transform="translate(-280 -23)"><use fill="#ffffff" xlink:href="#tnwea"/></g></g></svg>
+      </button>
+    </div>  
   </header>
   <main class="main" role="main">
-    <section class="banner-section container">
-      <h1 class="visually-hidden">Копицентр Artactive</h1>
-      <div class="banner-section__banner-wrap">
-        <div class="banner-section__text-wrap">
-          <strong class="banner-section__slogan">Размер не имеет значения!</strong>
-          <b class="banner-section__caption">Оперативная полиграфия и широкоформатная печать любого размера</b>
-          <button class="banner-section__button button" type="button">Заказать печать</button>
-          <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
+    <section class="banner-section">
+      <div class="container">
+        <h1 class="visually-hidden">Копицентр Artactive</h1>
+        <div class="banner-section__banner-wrap">
+          <div class="banner-section__text-wrap">
+            <strong class="banner-section__slogan">Размер не имеет значения!</strong>
+            <b class="banner-section__caption">Оперативная полиграфия и широкоформатная печать любого размера</b>
+            <button class="banner-section__button button" type="button">Заказать печать</button>
+            <span class="banner-section__delivery">с доставкой по Ярославлю и Ярославской области</span>
+          </div>
         </div>
+        <button class="banner-section__button-down" type="button" aria-label="Вниз">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="31" viewBox="0 0 19 31"><defs>
+            <path id="4b8ka" d="M381 537.5a9.5 9.5 0 1 1 19 0v12a9.5 9.5 0 1 1-19 0z"/><path id="4b8kb" d="M390 535.5a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0z"/>
+            <clipPath id="4b8kc"><use fill="#fff" xlink:href="#4b8ka"/></clipPath><clipPath id="4b8kd"><use fill="#fff" xlink:href="#4b8kb"/></clipPath>
+          </defs><g><g transform="translate(-381 -528)"><g><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#4b8kc&quot;)" 
+            xlink:href="#4b8ka"/></g><g><use fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#4b8kd&quot;)" xlink:href="#4b8kb"/></g></g></g>
+          </svg>
+        </button>
       </div>
-      <button class="banner-section__button-down" type="button" aria-label="Вниз">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="31" viewBox="0 0 19 31"><defs>
-          <path id="4b8ka" d="M381 537.5a9.5 9.5 0 1 1 19 0v12a9.5 9.5 0 1 1-19 0z"/><path id="4b8kb" d="M390 535.5a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0z"/>
-          <clipPath id="4b8kc"><use fill="#fff" xlink:href="#4b8ka"/></clipPath><clipPath id="4b8kd"><use fill="#fff" xlink:href="#4b8kb"/></clipPath>
-        </defs><g><g transform="translate(-381 -528)"><g><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#4b8kc&quot;)" 
-          xlink:href="#4b8ka"/></g><g><use fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#4b8kd&quot;)" xlink:href="#4b8kb"/></g></g></g>
-        </svg>
-      </button>
     </section>
     <section class="about-section container purple-lines">
       <div class="about-section__text-wrap">

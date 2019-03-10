@@ -5,6 +5,7 @@
     background-position-x: 50%;
     padding-bottom: 64px;
     color: #ffffff;
+    background-color: $container-bg;
     @media(min-width: 456px) {
         background-image: url("../img/banner_750.png");
         background-position-x: 50%;
@@ -16,14 +17,10 @@
         padding-bottom: 94px;
     }
     @media(min-width: 1170px) {
-        background-image: url("../img/banner_1170.png"),
-      /*  linear-gradient(-225deg, #a044ff 0%, #6a3093 100%),*/
-      url("../img/banner-bg.png"),
-       linear-gradient(-45deg, rgb(160,68,255) 0%, rgb(106,48,147) 100%); 
-       background-size: contain, cover, cover;
+        background-image: url("../img/banner_1170.png");
     }
     &.container {
-        background-color: $container-bg;
+       
     }
     .visually-hidden {
         margin-bottom: 338px;
