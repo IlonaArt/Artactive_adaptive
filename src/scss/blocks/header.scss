@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     padding-top: 24px;
     background-color: $container-bg;
     @media(min-width: 320px) {
@@ -24,26 +25,52 @@
 
 .header__main-nav {
     display: flex;
-    @media(min-width: 320px) and (max-width: 1169px) {
-        display: none;
-    }
 }
 
 .header__nav-list {
     display: flex;
     @include ul-style();
     margin-right: 75px;
+    @media(min-width: 320px) and (max-width: 1169px) {
+        display: none;
+    }
+    &.show-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 331px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 48px;
+        z-index: 10;
+        margin-right: 0;
+        background-color: rgba(141, 60, 216, 10);
+        @media(min-width: 456px) {
+            min-height: 519px;
+        }
+        @media(min-width: 900px) {
+            display: none;
+        }
+    }
 }
 
 .header__nav-item {
     &:hover,
     &:focus {
         border-bottom: 1px solid $placeholder-color;
+        @media(min-width: 320px) and (max-width: 1169px) {
+            font-weight: 700;
+        }
     }
 }
 
 .header__nav-item:not(:last-child) {
-    margin-right: 54px;
+    @media(min-width: 320) and (max-width: 1169px) {
+       margin-right: 54px;
+    }
 }
 
 .header__nav-link {
@@ -58,6 +85,9 @@
 
 .header__phone-block {
     display: flex;
+    @media(min-width: 320px) and (max-width: 1169px) {
+        display: none;
+    }
 }
 
 .phone-button {
