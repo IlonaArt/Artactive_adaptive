@@ -1,8 +1,5 @@
 .banner-section {
     position: relative;
-    /*background-image: url("../img/banner-img.png");
-    background-repeat: no-repeat;
-    background-position-x: 50%;*/
     padding-bottom: 64px;
     color: #ffffff;
     background-color: $container-bg;
@@ -115,6 +112,11 @@
         max-height: 48px;
         margin-bottom: 0;
         margin-right: 29px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $button-color;
     }
 }
 

@@ -51,9 +51,9 @@
         @media(min-width: 456px) {
             min-height: 519px;
         }
-        @media(min-width: 900px) {
+       /* @media(min-width: 900px) {
             display: none;
-        }
+        }*/
     }
 }
 
@@ -68,7 +68,7 @@
 }
 
 .header__nav-item:not(:last-child) {
-    @media(min-width: 320) and (max-width: 1169px) {
+    @media(min-width: 1170px) {
        margin-right: 54px;
     }
 }

@@ -14,6 +14,18 @@
         padding-top: 52px;
         margin-bottom: 141px;
     }
+    @media(min-width: 1170px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 108px;
+    }
+}
+
+.about-section__title-wrap {
+    @media(min-width: 1170px) {
+        max-width: 515px;
+    }
 }
 
 .about-section__title {
@@ -27,6 +39,9 @@
     margin-bottom: 41px;
     @media(min-width: 750px) {
         margin-bottom: 35px;
+    }
+    @media(min-width: 1170px) {
+        max-width: 356px;
     }
 }
 

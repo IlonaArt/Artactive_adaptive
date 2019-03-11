@@ -161,6 +161,10 @@
     box-shadow: 0 20px 46px rgba(80, 9, 79, 0.35);
     background-color: $slide-color;
     border-radius: 10px;
+    @media(min-width: 460px) and (max-width: 749px) {
+        width: 430px;
+        height: 264px;
+    }
     @media(min-width: 750px) and (max-width: 1169px) {
         width: 690px;
         height: 462px;
@@ -169,6 +173,7 @@
     @media(min-width: 1170px) {
         width: 572px;
         height: 462px;
+        margin-bottom: 42px;
     }
 
     img {
@@ -181,9 +186,13 @@
             opacity: 1;
             border-radius: 10px;
         }
-        @media(max-width: 749px) {
+        @media(max-width: 429px) {
             width: 292px;
             height: 188px;
+        }
+        @media(min-width: 460px) and (max-width: 749px) {
+            width: 430px;
+            height: 264px;
         }
         @media(min-width: 750px) and (max-width: 1169px) {
             width: 690px;
@@ -204,6 +213,8 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         max-width: 690px;
+        max-height: 36px;
+        margin-bottom: 15px;
     }
     @media(min-width: 1170px) {
         justify-content: flex-end;
@@ -213,7 +224,7 @@
 
 .service__slide-description {
     font-size: 0.929em;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
     display: block;
     @media(min-width: 340px) {
         align-self: center;
@@ -251,6 +262,9 @@
 .consult-block__text-wrap {
     display: flex;
     flex-direction: column;
+    @media(min-width: 750px) {
+        flex-direction: row;
+    }
 }
 
 .consult-block__text {
@@ -258,6 +272,9 @@
     margin-bottom: 7px;
     @media(min-width: 540px) {
         margin-bottom: 0;
+    }
+    @media(min-width: 750px) {
+        margin-right: 36px;
     }
 }
 
