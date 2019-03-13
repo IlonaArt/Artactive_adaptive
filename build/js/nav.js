@@ -1,1 +1,0 @@
-var e=document.querySelector(".header__button"),t=document.querySelector(".header__nav-list");e.addEventListener("click",function(e){e.preventDefault(),t.classList.toggle("show-nav")});

@@ -8,17 +8,20 @@
 .service {
     &:nth-of-type(1) {
         background-color: $service-bg;
+        padding-bottom: 73px;
+        margin-bottom: 73px;
+        @media(min-width: 750px) {
+            padding-bottom: 23px;
+        }
+        @media(min-width: 1170px) {
+            padding-bottom: 65px;
+            padding-top: 40px;
+        }
         .container {
             display: flex;
-            flex-direction: column;
-            padding-bottom: 73px;
-            @media(min-width: 750px) {
-                padding-bottom: 23px;
-            }
+            flex-direction: column;          
             @media(min-width: 1170px) {
-                position: relative;
-                padding-bottom: 65px;
-                padding-top: 40px;
+                position: relative;             
             }
         }
         .service__caption {
@@ -38,11 +41,37 @@
     &:nth-of-type(2) {
         background-color: #ffffff;
         min-height: 802px;
+        position: relative;
+        @media(min-width: 500px) {
+            margin-bottom: 45px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 282px;
+            height: 355px;
+            bottom: 8%;
+            right: 0;
+            background-image: url("../img/interior.jpg");
+            background-repeat: no-repeat;  
+            @media(min-width: 500px) {
+                background-image: url("../img/interior_750.jpg");
+                width: 546px;
+                height: 640px;
+                top: 19%;
+                right: -30px;
+            }    
+            @media(min-width: 1170px) {
+                background-image: url("../img/interior_1170.jpg");
+                width: 1276px;
+                height: 813px;
+                right: 130px;
+                top: 120px;
+            }  
+        }
         .container {
             position: relative;
-           /* padding-bottom: 251px;*/
             @media(min-width: 750px) {
-             /*   padding-bottom: 356px;*/
                 padding-top: 112px;
             }
             @media(min-width: 1170px) {
@@ -50,29 +79,6 @@
                 flex-direction: column;
                 align-items: flex-end;
                 margin-bottom: 174px;
-            }
-            &::after {
-                position: absolute;
-                content: "";
-                width: 282px;
-                height: 355px;
-                bottom: 8%;
-                right: 0;
-                background-image: url("../img/interior.jpg");
-                background-repeat: no-repeat;  
-                @media(min-width: 750px) {
-                    background-image: url("../img/interior_750.jpg");
-                    width: 546px;
-                    height: 640px;
-                    top: 19%;
-                }    
-                @media(min-width: 1170px) {
-                    background-image: url("../img/interior_1170.jpg");
-                    width: 1276px;
-                    height: 813px;
-                    right: 130px;
-                    top: 120px;
-                }  
             }
         }
        
@@ -94,11 +100,14 @@
         }
     }  
     &:nth-of-type(3) {
-        position: relative;
+        background-color: $service-bg;
+        padding-top: 71px;
         padding-bottom: 58px;
-        @media(min-width: 750px) {
-            padding-bottom: 73px;
-        }
+            @media(min-width: 750px) {
+                position: relative;
+                padding-bottom: 73px;
+                padding-top: 112px;
+            }
         .service__caption {
             margin-bottom: 56px;
             &::before {
@@ -146,8 +155,8 @@
         font-family: "Muller", sans-serif;
         font-size: 200px;
         text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
-        top: 16px;
-        left: 31px;
+        top: 33px;
+        left: 26px;
         font-weight: 800;
         z-index: -1;
         color: grey;
@@ -344,6 +353,9 @@
     position: relative;
     margin-bottom: 47px;
     z-index: 10;
+    @media(min-width: 500px) {
+        max-width: 420px;
+    }
     @media(min-width: 750px) {
         max-width: 547px;
     }
