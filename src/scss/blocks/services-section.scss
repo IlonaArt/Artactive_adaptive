@@ -108,8 +108,22 @@
                 padding-bottom: 73px;
                 padding-top: 112px;
             }
+        .container {
+            @media(min-width: 600px) {
+                padding-right: 0;
+            }    
+        }
         .service__caption {
             margin-bottom: 56px;
+            @media(min-width: 320px) {
+                max-width: 286px;
+            }
+            @media(min-width: 500px) {
+                max-width: 323px;
+            }
+            @media(min-width: 664px) {
+                max-width: 424px;
+            }
             &::before {
                 content: "3";
             }
@@ -228,7 +242,7 @@
             opacity: 1;
             border-radius: 10px;
         }
-        @media(max-width: 429px) {
+        @media(max-width: 459px) {
             width: 292px;
             height: 188px;
         }
@@ -384,7 +398,10 @@
         margin-bottom: 32px;
     }
     &:nth-of-type(2) {
-        margin-bottom: 28px;
+        margin-bottom: 25px;
+        @media(min-width: 600px) and (max-width: 749px) {
+            margin-bottom: 68px;
+        }
     }
 }
 
@@ -398,40 +415,39 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    @media(min-width: 750px) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
+}
+
+.service__envelopes-picture {
+    display: block;
 }
 
 .service__img-wrap-envelopes {
-    position: relative;
     width: 304px;
     height: 255px;
     margin-bottom: 43px;
-    @media(min-width: 600px) {
+    @media(min-width: 750px) {
+        width: 365px;
+        height: 381px;
         margin-bottom: 0;
+    }
+    @media(min-width: 1030px) and (max-width: 3600px) {
+        width: 648px;
+        height: 544px;
+    }
+}
+
+.service__envelopes-img {
+    @media(min-width: 320px) {
+        width: 304px;
+        height: 255px;
     }
     @media(min-width: 750px) {
         width: 365px;
         height: 381px;
     }
-    &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        width: 304px;
-        height: 255px;
-        background-image: url("../img/envelopes.png");
-        background-repeat: no-repeat;
-        @media(min-width: 600px) {
-            left: 8%;
-        }
-        @media(min-width: 750px) {
-            background-image: url("../img/envelopes_750.png");
-            width: 365px;
-            height: 381px;
-        }
+    @media(min-width: 1030px) and (max-width: 3600px) {
+        width: 648px;
+        height: 544px;
     }
 }
 
@@ -451,7 +467,6 @@
             background-image: url("../img/paper-plane.png");
         }
     }
-
 }
 
 .application-form_white {

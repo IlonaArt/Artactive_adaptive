@@ -193,7 +193,12 @@
                 deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
           <div class="application-wrap"> 
             <div class="service__img-wrap-envelopes">
-              <!-- <img class="service__img" src="./build/img/envelopes.png" width="304" height="255" alt="Конверты"> -->
+              <picture class="service__envelopes-picture">
+                <source media="(max-width: 749px)" srcset="./build/img/envelopes.png">
+                <source media="(max-width: 1029px)" srcset="./build/img/envelopes_750.png">
+                <source media="(max-width: 3600px)" srcset="./build/img/envelopes_1170.png">   
+                <img class="service__envelopes-img" src="/build/img/envelopes.png" width="304" height="255" alt="Картинка с конвертами">
+              </picture>
             </div>
             <div class="service__form-wrap">
               <em class="application-form__text">Есть вопросы?</em>
