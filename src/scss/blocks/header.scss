@@ -30,7 +30,7 @@
 .header__nav-list {
     display: flex;
     @include ul-style();
-    margin-right: 75px;
+    margin-right: 74px;
     @media(min-width: 320px) and (max-width: 899px) {
         display: none;
         &.show-nav {

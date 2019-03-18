@@ -8,6 +8,9 @@
 .FAQ-section__title {
     line-height: 38px;
     margin-bottom: 42px;
+    @media(min-width: 1170px) {
+        margin-bottom: 57px;
+    }
 }
 
 .FAQ-section__list {
@@ -15,10 +18,22 @@
     @media(min-width: 750px) {
         margin-bottom: 56px;
     }
+    @media(min-width: 1170px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 490px;
+        margin-bottom: 20px;
+    }
 }
 
 .FAQ-section__item {
     margin-bottom: 35px;
+    @media(min-width: 1170px) {
+        max-width: 552px;
+        margin-bottom: 45px;
+        margin-right: 40px;
+    }
 }
 
 .FAQ-section__question {
@@ -45,6 +60,11 @@
             background-repeat: no-repeat;
             background-position: 100% 100%; 
         }
+        @media(min-width: 1170px) {
+            padding: 40px 31px 6px 305px;
+            background-image: url("../img/appl-bg_1170.png");
+
+        }
         &::before {
             position: absolute;
             content: "";
@@ -60,15 +80,19 @@
                 top: -28%;
                 right: -4%;
             }
+            @media(min-width: 1170px) {
+                top: 0;
+                left: 30px;
+            }
         }
-    }
-    .application-form__text,
-    .application-form__request {
-        color: $placeholder-color;
-    }
-    .application-form__request {
-        @media(min-width: 750px) {
-            max-width: 100%;
+        .application-form__text,
+        .application-form__request {
+            color: $placeholder-color;
+        }
+        .application-form__request {
+            @media(min-width: 750px) {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -77,10 +101,13 @@
     @media(min-width: 750px) {
         flex-direction: row;
         justify-content: space-between;
+        @media(min-width: 1170px) {
+            justify-content: stretch;
+        }
     }
     .application-input {
         @include placeholder;
-        background-color: $application-form;
+        background-color: transparent;
         color: $placeholder-color;
         border-bottom: 1px solid $input-underline;
         &.name {

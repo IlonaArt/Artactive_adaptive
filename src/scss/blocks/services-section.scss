@@ -3,6 +3,9 @@
     @media(min-width: 750px) {
         margin-bottom: 75px;
     }
+    @media(min-width: 1170px) {
+        margin-bottom: 116px;
+    }
 }
 
 .service {
@@ -42,41 +45,62 @@
         background-color: #ffffff;
         position: relative;
         min-height: 736px;
-        @media(min-width: 500px) {
-            margin-bottom: 45px;
-        }
         @media(min-width: 750px) {
             min-height: 818px;
         }
         @media(min-width: 1170px) {
             min-height: 870px;
         }
-        &::after {
-            position: absolute;
-            content: "";
-            width: 282px;
-            height: 355px;
-            bottom: 8%;
-            right: 0;
-            background-image: url("../img/interior.jpg");
-            background-repeat: no-repeat;  
-            @media(min-width: 500px) {
-                background-image: url("../img/interior_750.jpg");
-                width: 546px;
-                height: 640px;
-                top: 19%;
-                right: -30px;
-            }    
-            @media(min-width: 1170px) {
-                background-image: url("../img/interior_1170.jpg");
-                width: 1276px;
-                height: 813px;
-                right: 130px;
-                top: 120px;
-            }  
+        &.decorative-lines {
+            &::before {
+               @media(min-width: 320px) and (max-width: 749px) {
+                   display: none;
+               } 
+               @media(min-width: 750px) {
+                    bottom: -20px;
+               }
+                @media(min-width: 1170px) {
+                    bottom: -190px;
+                }
+            }
+            &::after {
+                @media(min-width: 320px) and (max-width: 749px) {
+                    display: none;
+                } 
+                @media(min-width: 750px) {
+                    bottom: -66px;
+                }
+                @media(min-width: 1170px) {
+                    bottom: -234px;
+                }
+            }
         }
         .container {
             position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 282px;
+                height: 355px;
+                bottom: 8%;
+                right: 0;
+                background-image: url("../img/interior.jpg");
+                background-repeat: no-repeat;  
+                @media(min-width: 500px) {
+                    background-image: url("../img/interior_750.jpg");
+                    width: 546px;
+                    height: 640px;
+                    top: 19%;
+                    right: -30px;
+                }    
+                @media(min-width: 1170px) {
+                    background-image: url("../img/interior_1170.jpg");
+                    width: 1276px;
+                    height: 813px;
+                    right: 130px;
+                    top: 120px;
+                }  
+            }
             @media(min-width: 750px) {
                 padding-top: 112px;
             }
@@ -509,42 +533,40 @@
             order: -1;
             width: 100%;
         }
+        .application-form__text,
+        .application-form__request {
+            color: $caption-color;
+        }
+        .application-input {
+            @include placeholder ($color: $input-color);
+            border-bottom: 1px solid $input-underline;
+            background-color: $service-bg;
+            outline-color: $input-underline;
+            &.name {
+                margin-bottom: 23px;
+            }
+            &.phone {
+                margin-bottom: 40px;
+                @media(min-width: 750px) {
+                    margin-bottom: 34px;
+                }
+            }
+            @media(min-width: 750px) {
+                max-width: 240px;
+            }
+        }
+        .application-form__button {
+            max-width: 289px;
+            @media(min-width: 750px) {
+                max-width: 240px;
+            }
+            @media(min-width: 1170px) {
+                position: relative;
+                z-index: 10;
+                max-width: 192px;
+            }
+        }
     }
 }
 
-.application-form_white {
-    .application-form__text,
-    .application-form__request {
-        color: $caption-color;
-    }
-    .application-input {
-        @include placeholder ($color: $input-color);
-        border-bottom: 1px solid $input-underline;
-        background-color: $service-bg;
-        outline-color: $input-underline;
-        &.name {
-            margin-bottom: 23px;
-        }
-        &.phone {
-            margin-bottom: 40px;
-            @media(min-width: 750px) {
-                margin-bottom: 34px;
-            }
-        }
-        @media(min-width: 750px) {
-            max-width: 240px;
-        }
-    }
-    .application-form__button {
-        max-width: 289px;
-        @media(min-width: 750px) {
-            max-width: 240px;
-        }
-        @media(min-width: 1170px) {
-            position: relative;
-            z-index: 10;
-            max-width: 192px;
-        }
-    }
-}
 
