@@ -60,13 +60,14 @@
         left: 30px;
         top: 36px;
         transform: translateY(30px);
-        padding: 58px 50px 65px 50px;
+        padding: 58px 50px 80px;
     }
     @media(min-width: 1170px) {
         left: 15px;
-    }
-    @media(min-width: 1200px) {
-
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 458px;
+        padding: 88px 102px 118px 88px;
     }
 }
 
@@ -103,6 +104,9 @@
     &.phone {
         background-image: url("../img/phone.png");
         background-position: 0 60%;
+        @media(min-width: 750px) {
+            margin-bottom: 0;
+        }
     }
     .description {
         display: block;
