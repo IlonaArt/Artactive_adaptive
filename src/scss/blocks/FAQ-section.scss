@@ -48,6 +48,7 @@
 
 .FAQ-section__list {
     @include ul-style();
+    margin-bottom: 56px;
     @media(min-width: 750px) {
         margin-bottom: 56px;
     }
@@ -61,7 +62,9 @@
 }
 
 .FAQ-section__item {
-    margin-bottom: 35px;
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
     @media(min-width: 1170px) {
         max-width: 552px;
         margin-bottom: 45px;
