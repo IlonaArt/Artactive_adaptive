@@ -45,6 +45,9 @@
         background-color: #ffffff;
         position: relative;
         min-height: 736px;
+        @media(min-width: 500px) {
+            margin-bottom: 62px;
+        }
         @media(min-width: 750px) {
             min-height: 818px;
         }
@@ -57,7 +60,7 @@
                    display: none;
                } 
                @media(min-width: 750px) {
-                    bottom: -20px;
+                    bottom: -80px;
                }
                 @media(min-width: 1170px) {
                     bottom: -190px;
@@ -68,7 +71,7 @@
                     display: none;
                 } 
                 @media(min-width: 750px) {
-                    bottom: -66px;
+                    bottom: -124px;
                 }
                 @media(min-width: 1170px) {
                     bottom: -234px;
@@ -82,7 +85,7 @@
                 content: "";
                 width: 282px;
                 height: 355px;
-                bottom: 8%;
+                bottom: -41%;
                 right: 0;
                 background-image: url("../img/interior.jpg");
                 background-repeat: no-repeat;  
@@ -90,9 +93,12 @@
                     background-image: url("../img/interior_750.jpg");
                     width: 546px;
                     height: 640px;
-                    top: 19%;
+                    top: 30%;
                     right: -30px;
                 }    
+                @media(min-width: 750px) {
+                    top: 38%;
+                }
                 @media(min-width: 1170px) {
                     background-image: url("../img/interior_1170.jpg");
                     width: 1276px;
@@ -410,6 +416,7 @@
     position: relative;
     margin-bottom: 47px;
     z-index: 10;
+    max-width: 277px;
     @media(min-width: 500px) {
         max-width: 420px;
     }
