@@ -1,6 +1,6 @@
 .services-section {
     margin-bottom: 34px;
-    @media(min-width: 750px) {
+    @media(min-width: 500px) {
         margin-bottom: 75px;
     }
     @media(min-width: 1170px) {
@@ -53,6 +53,7 @@
         }
         @media(min-width: 1170px) {
             min-height: 870px;
+            margin-bottom: 170px;
         }
         &.decorative-lines {
             &::before {
@@ -265,7 +266,7 @@
     margin: 0 auto 18px;
     box-shadow: 0 20px 46px rgba(80, 9, 79, 0.35);
     background-color: $slide-color;
-    border-radius: 10px;
+    border-radius: 30px;
     @media(min-width: 460px) and (max-width: 749px) {
         width: 430px;
         height: 264px;

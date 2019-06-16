@@ -58,12 +58,10 @@
 }
 
 .header__nav-item {
+    border-bottom: 1px solid transparent;
     &:hover,
     &:focus {
         border-bottom: 1px solid $placeholder-color;
-        @media(min-width: 320px) and (max-width: 1169px) {
-            font-weight: 700;
-        }
     }
 }
 
