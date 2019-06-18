@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artactive</title>
+  <link rel="stylesheet" href="./libraries/OwlCarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./libraries/OwlCarousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="./build/css/main.css">
 </head>
 <body>
@@ -205,48 +207,46 @@
     </section>
     <section class="comments-section container">
       <h2 class="comments-section__title title">3. Отзывы</h2>
-      <div id="comments__slider">
-        <div class="comments__slider-item-wrap">
-          <div class="comments__slider-item img-slide showed">
-            <div class="comments__img-wrap">
-              <img class="comments__img" src="./build/img/comment-1.jpg" width="136" height="136" alt="Александров Максим">
+      <div class="comments__slider owl-carousel owl-theme owl-loaded" id="comments__slider">
+        <div class="owl-stage-outer">
+          <div class="comments__slider-item-wrap owl-stage">
+            <div class="comments__slider-item img-slide owl-item showed">
+              <div class="comments__img-wrap">
+                <img class="comments__img" src="./build/img/comment-1.jpg" width="136" height="136" alt="Александров Максим">
+              </div>
+              <div class="comments__comment-wrap">
+                <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
+                  поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
+                  показали и сделали по высшему разряду. Советую!</p>
+                <strong class="comments__author">Александров Максим, 24 года</strong>
+                <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+              </div>
             </div>
-            <div class="comments__comment-wrap">
-              <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
-                поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
-                показали и сделали по высшему разряду. Советую!</p>
-              <strong class="comments__author">Александров Максим, 24 года</strong>
-              <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+            <div class="comments__slider-item img-slide owl-item showed">
+              <div class="comments__img-wrap">
+                <img class="comments__img" src="./build/img/comment-1.jpg" width="136" height="136" alt="Александров Максим">
+              </div>
+              <div class="comments__comment-wrap">
+                <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
+                  поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
+                  показали и сделали по высшему разряду. Советую!</p>
+                <strong class="comments__author">Александров Максим, 24 года</strong>
+                <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+              </div>
+            </div>
+            <div class="comments__slider-item img-slide owl-item showed">
+              <div class="comments__img-wrap">
+                <img class="comments__img" src="./build/img/comment-2.jpg" width="136" height="136" alt="Александров Максим">
+              </div>
+              <div class="comments__comment-wrap">
+                <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
+                  поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
+                  показали и сделали по высшему разряду. Советую!</p>
+                <strong class="comments__author">Александров Максим, 24 года</strong>
+                <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+              </div>
             </div>
           </div>
-          <div class="comments__slider-item img-slide showed">
-            <div class="comments__img-wrap">
-              <img class="comments__img" src="./build/img/comment-1.jpg" width="136" height="136" alt="Александров Максим">
-            </div>
-            <div class="comments__comment-wrap">
-              <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
-                поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
-                показали и сделали по высшему разряду. Советую!</p>
-              <strong class="comments__author">Александров Максим, 24 года</strong>
-              <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
-            </div>
-          </div>
-          <div class="comments__slider-item img-slide showed">
-            <div class="comments__img-wrap">
-              <img class="comments__img" src="./build/img/comment-2.jpg" width="136" height="136" alt="Александров Максим">
-            </div>
-            <div class="comments__comment-wrap">
-              <p class="comments__description description">Обратился в компанию АртАктив за визитками. Это мой первый опыт, 
-                поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, 
-                показали и сделали по высшему разряду. Советую!</p>
-              <strong class="comments__author">Александров Максим, 24 года</strong>
-              <a class="comments__link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
-            </div>
-          </div>
-        </div>
-        <div class="button-wrap">
-          <button class="slider-button button-prev" type="button" aria-label="Показать предыдущее изображение"></button>
-          <button class="slider-button button-next" type="button" aria-label="Показать следующее изображение"></button>
         </div>
       </div>
     </section>
@@ -335,6 +335,8 @@
       <span class="footer__design footer-text">Designed by Sergey Strogiy</span>
     </footer>
   </main>
+  <script src="./libraries/jquery-3.4.1.min.js"></script>
+  <script src="./libraries/OwlCarousel/owl.carousel.min.js"></script>
   <script src="./build/js/index.js"></script>
 </body>
 </html>

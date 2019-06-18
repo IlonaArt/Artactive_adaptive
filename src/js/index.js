@@ -1,4 +1,11 @@
-function switchSlide(id) {
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false
+    });
+  });
+/*function switchSlide(id) {
 
     var slider = document.querySelector(id);
     var btn_prev = slider.querySelector('.button-wrap .button-prev');
@@ -31,7 +38,7 @@ function switchSlide(id) {
 };
 
 switchSlide("#slider");
-switchSlide("#comments__slider");
+switchSlide("#comments__slider");*/
 
 var menu = document.querySelector(".header__button");
 var nav = document.querySelector(".header__nav-list");

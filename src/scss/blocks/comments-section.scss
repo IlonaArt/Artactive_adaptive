@@ -34,7 +34,6 @@
     position: relative;
     width: 844px;
     height: 264px;
-    margin-bottom: 42px;
 }
 
 .comments__slider-item {
@@ -46,9 +45,7 @@
     display: flex;
     flex-direction: column;
     padding: 61px 25px 49px 18px;
-    margin: 0 auto 46px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
     opacity: 0;
     transition: opacity 1s;
     &.showed {
