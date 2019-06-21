@@ -11,7 +11,7 @@ sass.compiler = require('node-sass');
 
 function styles() {
   return gulp.src('./src/scss/main.scss')
-  .pipe(sourcemaps.init())
+  // .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
@@ -20,7 +20,7 @@ function styles() {
   .pipe(minify({
     level: 2
   }))
-  .pipe(sourcemaps.write())
+  // .pipe(sourcemaps.write())
   .pipe(gulp.dest('./build/css/'))
   .pipe(browserSync.stream())
 }

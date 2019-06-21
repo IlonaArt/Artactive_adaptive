@@ -124,31 +124,27 @@
                 <li class="service__item description">доставка баннеров</li>
               </ul>
             </div>
-            <div id="slider" class="service__slider">
-              <div class="service__img-wrap">
-                <picture>
-                  <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
-                  <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
-                  <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
-                </picture>
-                <picture>
-                  <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
-                  <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
-                  <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
-                </picture>
-                <picture>
-                  <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
-                  <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
-                  <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
-                </picture>
-              </div>
-              <div class="service__slide-nav-wrap">
-                <span class="service__slide-description">Растяжка на ул. Ленина</span>
-                <div class="button-wrap">
-                  <button class="slider-button button-prev" type="button" aria-label="Показать предыдущее изображение"></button>
-                  <button class="slider-button button-next" type="button" aria-label="Показать следующее изображение"></button>
+            <div id="slider" class="service__slider owl-carousel owl-theme owl-loaded">
+              <div class="service__img-wrap owl-stage-outer">
+                <div class="owl-stage">
+                  <picture class="owl-item">
+                    <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+                    <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+                    <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+                  </picture>
+                  <picture class="owl-item">
+                    <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+                    <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+                    <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+                  </picture>
+                  <picture class="owl-item">
+                    <source media="(max-width: 749px)" srcset="./build/img/slide-1.jpg">
+                    <source media="(max-width: 1169px)" srcset="./build/img/slide-1_750.jpg">
+                    <img class="service__slide img-slide showed" src="./build/img/slide-1_1170.jpg" width="572" height="462" alt="Баннер Miller">
+                  </picture>
                 </div>
               </div>
+              <span class="service__slide-description">Растяжка на ул. Ленина</span>
             </div>
         </div>
           <div class="service__consult-block">

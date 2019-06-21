@@ -252,10 +252,32 @@
 
 /* slider */
 .service__slider {
+    position: relative;
     min-width: 292px; 
     margin-bottom: 43px;
     @media(min-width: 750px) {
         margin-bottom: 16px;
+    }
+    @media(max-width: 469px) {
+        margin-bottom: 86px;
+    }
+    &.owl-carousel {
+        width: inherit;
+        .owl-stage-outer {
+            @media(max-width: 469px) {
+                margin-bottom: 18px;
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+            @media(min-width: 320px) and (max-width: 469px) {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -44px;
+            }
+        }
     }
 }
 
@@ -266,7 +288,7 @@
     margin: 0 auto 18px;
     box-shadow: 0 20px 46px rgba(80, 9, 79, 0.35);
     background-color: $slide-color;
-    border-radius: 30px;
+    border-radius: 10px;
     @media(min-width: 460px) and (max-width: 749px) {
         width: 430px;
         height: 264px;
@@ -311,29 +333,11 @@
     }
 }
 
-.service__slide-nav-wrap {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    @media(min-width: 750px) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        max-width: 690px;
-        max-height: 36px;
-        margin-bottom: 15px;
-    }
-    @media(min-width: 1170px) {
-        justify-content: flex-end;
-        max-width: 572px;
-    }
-}
-
 .service__slide-description {
     font-size: 0.929em;
-    margin-bottom: 27px;
-    display: block;
-    @media(min-width: 340px) {
-        align-self: center;
+    margin-left: 290px;
+    @media(max-width: 469px) {
+        margin-left: 5px;
     }
 }
 
@@ -345,7 +349,7 @@
     }
     @media(min-width: 1170px) {
         position: absolute;
-        bottom: 109px;
+        bottom: 84px;
         left: 15px;
         max-width: 473px;
         min-width: 0;

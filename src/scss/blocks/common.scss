@@ -37,12 +37,9 @@
     }
 }
 
-.comments__slider {
+.comments__slider,
+.service__slider {
     &.owl-carousel {
-        .owl-stage-outer {
-            margin-bottom: 42px;
-            box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
-        }
         .owl-nav {
             display: flex;
             width: 224px;
@@ -62,6 +59,7 @@
                 outline-color: $button-color;
                 &:hover {
                     background-color: transparent;
+                    cursor: pointer;
                 }
             }
             span {
