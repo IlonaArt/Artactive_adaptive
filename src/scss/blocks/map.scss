@@ -9,8 +9,7 @@
     @media(min-width: 1170px) {
         height: 653px;
     }
-    .map__img {   
-       /* position: absolute;     для iframe*/ 
+   /* .map__img {   
         @media(min-width: 320px) and (max-width: 699px) {
             margin: 0 auto;
             display: block;
@@ -23,7 +22,7 @@
             width: 100%;
             height: 653px;
         }
-    }
+    }*/
     
     iframe {
         position: absolute;
@@ -32,7 +31,8 @@
         z-index: 10;
     }
 
-    .container {
+    /*.container {
+        height: 100%;
         @media(min-width: 1170px) {
             position: absolute;
             width: 100%;
@@ -41,10 +41,10 @@
             left: 50%;
             transform: translateX(-50%);
         }
-    }
+    }*/
 }
 
-.map__contacts-wrap {
+ /* .map__contacts-wrap {
     position: absolute;
     top: 67px;
     left: 50%;
@@ -122,4 +122,4 @@
         color: #551a8b;
         text-decoration: underline;
     }
-}
+}*/

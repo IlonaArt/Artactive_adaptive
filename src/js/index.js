@@ -1,5 +1,18 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    function showViewPortWidth(display) {
+        if(display) {
+          var width = jQuery(window).width();
+          jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;top:40px;left:5px;color:#fff;background:#000;padding:10px">Width: '+ width +'</div>');
+          jQuery(window).resize(function() {
+            width = jQuery(window).width();
+            jQuery('#viewportsize').html('Width: '+ width);
+          });
+        }
+      }
+     
+    showViewPortWidth(true);
+    
+    $('.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
         margin: 26,
@@ -18,6 +31,36 @@ $(document).ready(function(){
         }
     });
   });
+
+var forms = document.querySelectorAll('.application-form');
+var inpPhone = document.querySelectorAll('.application-input.phone');
+
+for (var i = 0; i < inpPhone.length; i++) {
+    inpPhone[i].addEventListener('input', removeNotNumbers);
+}
+
+for (var i = 0; i < forms.length; i++) {
+    forms[i].addEventListener('submit', pushInputs);
+}
+
+function pushInputs(e) {
+    e.preventDefault();
+
+    outputMsg(this);
+    return;
+};
+
+function removeNotNumbers() {
+    this.value = this.value.replace(/[^0-9]/g, '')
+};
+
+function outputMsg(form) {
+    var inpName = form.querySelector('.application-input.name');
+    form.insertAdjacentHTML('afterEnd', 'Спасибо, ' + inpName.value + ', что выбрали нас! В течение нескольких минут мы с Вами свяжемся')
+};
+
+
+
 /*function switchSlide(id) {
 
     var slider = document.querySelector(id);

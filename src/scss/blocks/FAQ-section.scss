@@ -6,6 +6,7 @@
     }
     &.decorative-lines {
         &::before {
+            z-index: 12;
             @media(min-width: 320px) {
                 display: none;
             }
@@ -21,6 +22,7 @@
             }
         }
         &::after {
+            z-index: 12;
             @media(min-width: 320px) {
                 display: none;
             }
